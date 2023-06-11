@@ -1,4 +1,3 @@
-'use client';
 import './globals.css';
 import { MainLayout } from '@/shared/components/layout/mainLayout';
 import { Inter } from 'next/font/google';
