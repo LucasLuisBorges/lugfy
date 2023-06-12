@@ -10,7 +10,7 @@ export function ArrowButton({ variant, ...rest }: IProps) {
   return (
     <button
       className={classNames(
-        'p-1 bg-black rounded-full',
+        'p-1 bg-black/60 rounded-full',
         variant === 'top' && 'rotate-90',
         variant === 'right' && 'rotate-180',
         variant === 'bottom' && '-rotate-90',
