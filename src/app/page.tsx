@@ -13,8 +13,8 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <div className="w-full overflow-x-auto">
-          <section className="w-full p-2 h-[320px] gap-4 flex flex-col flex-wrap overflow-x-hidden">
+        <div className="w-full overflow-x-hidden">
+          <section className="grid gap-4 grid-flow-col p-2 auto-rows-max">
             <AlbumCard />
             <AlbumCard />
             <AlbumCard />
