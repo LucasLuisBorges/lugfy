@@ -45,7 +45,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
         </Pane>
         <Pane>
           <section className="relative flex-1 min-h-screen bg-gradient-to-br from-[#1f1f1f] to-[#1f1e1e]">
-            <div className="sticky flex top-0 left-0 w-full px-8 bg-[#121212] h-16 items-center justify-between">
+            <div className="sticky flex top-0 left-0 w-full px-8 bg-[#121212] h-16 items-center justify-between z-50">
               <Link href="/" className="flex lg:hidden">
                 <Image src="/logo.png" className="m-6 cursor-pointer" alt="Logo" width={131} height={40} />
               </Link>
