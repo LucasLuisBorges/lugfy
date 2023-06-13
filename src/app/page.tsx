@@ -13,14 +13,16 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <section className="w-full p-2 h-[320px] gap-4 flex flex-col flex-wrap overflow-x-hidden">
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-        </section>
+        <div className="w-full overflow-x-auto">
+          <section className="w-full p-2 h-[320px] gap-4 flex flex-col flex-wrap overflow-x-hidden">
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+          </section>
+        </div>
       </section>
       <section className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
