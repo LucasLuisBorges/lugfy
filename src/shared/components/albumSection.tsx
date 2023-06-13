@@ -18,12 +18,12 @@ export function AlbumSection({ title, children }: IProps) {
       }
     };
 
-    handleResize();
+    setTimeout(handleResize, 100);
 
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [showActions]);
 
   return (
     <section className="flex flex-col gap-4">
