@@ -7,7 +7,7 @@ export default function Home() {
       <section className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="text-white font-semibold text-2xl">Foco</h1>
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center pr-4 lg:pr-0">
             <span className="text-white/60 text-sm cursor-pointer hover:underline underline-offset-2 mr-2">Ver todos</span>
             <ArrowButton variant="left" />
             <ArrowButton variant="right" />
@@ -27,7 +27,7 @@ export default function Home() {
       <section className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="text-white font-semibold text-2xl">Foco</h1>
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center pr-4 lg:pr-0">
             <span className="text-white/60 text-sm cursor-pointer hover:underline underline-offset-2 mr-2">Ver todos</span>
             <ArrowButton variant="left" />
             <ArrowButton variant="right" />
@@ -47,7 +47,7 @@ export default function Home() {
       <section className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="text-white font-semibold text-2xl">Foco</h1>
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center pr-4 lg:pr-0">
             <span className="text-white/60 text-sm cursor-pointer hover:underline underline-offset-2 mr-2">Ver todos</span>
             <ArrowButton variant="left" />
             <ArrowButton variant="right" />
