@@ -13,7 +13,7 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <div className="w-full overflow-x-hidden">
+        <div className="w-full overflow-x-auto md:overflow-x-hidden">
           <section className="grid gap-4 grid-flow-col p-2 auto-rows-max">
             <AlbumCard />
             <AlbumCard />
@@ -33,14 +33,16 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <section className="w-full p-2 h-[320px] gap-4 flex flex-col flex-wrap overflow-x-hidden">
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-        </section>
+        <div className="w-full overflow-x-auto md:overflow-x-hidden">
+          <section className="grid gap-4 grid-flow-col p-2 auto-rows-max">
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+          </section>
+        </div>
       </section>
       <section className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
@@ -51,14 +53,16 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <section className="w-full p-2 h-[320px] gap-4 flex flex-col flex-wrap overflow-x-hidden">
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-          <AlbumCard />
-        </section>
+        <div className="w-full overflow-x-auto md:overflow-x-hidden">
+          <section className="grid gap-4 grid-flow-col p-2 auto-rows-max">
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+            <AlbumCard />
+          </section>
+        </div>
       </section>
     </div>
   );
