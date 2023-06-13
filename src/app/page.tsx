@@ -53,7 +53,7 @@ export default function Home() {
             <ArrowButton variant="right" />
           </div>
         </div>
-        <div className="w-full overflow-x-auto md:overflow-x-hidden">
+        <div id="scrollbar" className="w-full overflow-x-auto md:overflow-x-hidden">
           <section className="grid gap-4 grid-flow-col p-2 auto-rows-max">
             <AlbumCard />
             <AlbumCard />

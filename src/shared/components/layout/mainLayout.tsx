@@ -79,7 +79,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
           <List size={28} className="text-white hover:scale-105 transition duration-300" />
         </div>
       </div>
-      <section className="py-5 px-9">{children}</section>
+      <section className="py-5 pl-9">{children}</section>
     </section>
   );
 };
