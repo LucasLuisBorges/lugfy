@@ -26,8 +26,8 @@ const MainLayoutComponent = ({ children }: IProps) => {
   return isBigScreen ? (
     <section className="flex flex-col min-h-screen">
       <SplitPane split="vertical" sizes={sizes} onChange={setSizes} sashRender={sashRender}>
-        <Pane minSize={180} maxSize="30%" className="flex">
-          <section className="sticky flex flex-col w-full h-screen max-h-screen bg-[#030303] text-white">
+        <Pane minSize={180} maxSize="20%" className="flex">
+          <section className="sticky flex flex-col w-full h-[92vh] max-h-[92vh] bg-[#030303] text-white">
             <Link href="/">
               <Image src="/logo.png" className="m-6 cursor-pointer" alt="Logo" width={131} height={40} />
             </Link>
@@ -44,7 +44,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
           </section>
         </Pane>
         <Pane>
-          <section className="relative flex-1 min-h-screen bg-gradient-to-br from-[#1f1f1f] to-[#1f1e1e]">
+          <section className="relative flex-1 bg-gradient-to-br from-[#1f1f1f] to-[#1f1e1e]">
             <div className="sticky flex top-0 left-0 w-full px-8 bg-[#121212] h-16 items-center justify-between z-50">
               <Link href="/" className="flex lg:hidden">
                 <Image src="/logo.png" className="m-6 cursor-pointer" alt="Logo" width={131} height={40} />
@@ -60,12 +60,13 @@ const MainLayoutComponent = ({ children }: IProps) => {
                 </button>
               </div>
             </div>
-            <div className="flex-1 max-h-screen overflow-y-auto">
+            <div className="flex-1 max-h-[92vh] overflow-y-auto">
               <section className="py-5 px-9">{children}</section>
             </div>
           </section>
         </Pane>
       </SplitPane>
+      <div className="h-[8vh] w-full bg-gradient-to-br from-[#121212] to-[#181818]" />
       <LanguageModal isVisible={languageModal} setIsVisible={setLanguageModal} />
     </section>
   ) : (
@@ -80,6 +81,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
         </div>
       </div>
       <section className="py-5 pl-9">{children}</section>
+      <div className="fixed bottom-2 rounded-full left-[5vw] h-[8vh] w-[90vw] bg-gradient-to-br from-[#161616] to-[#161616]" />
     </section>
   );
 };
