@@ -7,7 +7,7 @@ import 'split-pane-react/esm/themes/default.css';
 import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { LanguageButton, ArrowButton, MenuIconItem, LanguageModal } from '../index';
+import { LanguageButton, ArrowButton, MenuIconItem, LanguageModal, PlayerView, MobilePlayerView } from '../index';
 
 interface IProps {
   children: ReactNode;
@@ -66,7 +66,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
           </section>
         </Pane>
       </SplitPane>
-      <div className="h-[8vh] w-full bg-gradient-to-br from-[#121212] to-[#181818]" />
+      <PlayerView />
       <LanguageModal isVisible={languageModal} setIsVisible={setLanguageModal} />
     </section>
   ) : (
@@ -81,7 +81,7 @@ const MainLayoutComponent = ({ children }: IProps) => {
         </div>
       </div>
       <section className="py-5 pl-9">{children}</section>
-      <div className="fixed bottom-2 rounded-full left-[5vw] h-[8vh] w-[90vw] bg-gradient-to-br from-[#161616] to-[#161616]" />
+      <MobilePlayerView />
     </section>
   );
 };
