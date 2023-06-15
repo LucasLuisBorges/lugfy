@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Play, Pause, SpeakerSimpleNone, SpeakerSimpleSlash } from 'phosphor-react';
+import { Play, Pause, SpeakerSimpleNone, SpeakerSimpleSlash, SkipBack, SkipForward } from 'phosphor-react';
 
 export function PlayerView() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -103,8 +103,16 @@ export function PlayerView() {
         />
         <span className="text-white text-sm">{formatTime(duration)}</span>
       </div>
-      <div className="bg-blue-500 rounded-full p-2 cursor-pointer text-white" onClick={handleTogglePlay}>
-        {isPlaying ? <Pause size={32} /> : <Play size={32} />}
+      <div className="flex gap-2 items-center">
+        <div className="bg-blue-500 rounded-full p-2 cursor-pointer text-white mt-2">
+          <SkipBack size={23} />
+        </div>
+        <div className="bg-blue-500 rounded-full p-2 cursor-pointer text-white" onClick={handleTogglePlay}>
+          {isPlaying ? <Pause size={32} /> : <Play size={32} />}
+        </div>
+        <div className="bg-blue-500 rounded-full p-2 cursor-pointer text-white mt-2">
+          <SkipForward size={23} />
+        </div>
       </div>
       <div className="w-[30vw] flex justify-end">
         <div className="flex items-center text-white gap-2">
