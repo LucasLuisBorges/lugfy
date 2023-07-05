@@ -119,7 +119,7 @@ export function MobilePlayerView() {
         </section>
       </section>
       <div className="fixed top-56 -left-14 flex items-center text-white gap-2 -rotate-90">
-        <div className="cursor-pointer" onClick={handleToggleMute}>
+        <div className="cursor-pointer rotate-90 pl-1" onClick={handleToggleMute}>
           {isMuted ? <SpeakerSimpleSlash size={20} /> : <SpeakerSimpleNone size={20} />}
         </div>
         <input type="range" min="0" max="1" step="0.01" value={isMuted ? 0 : volume} onChange={handleVolumeChange} />
