@@ -1,4 +1,5 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google';
 import { dark } from '@clerk/themes';
 import { ClerkProvider } from '@clerk/nextjs';
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          {children}
+          <Analytics />
+        </body>
       </html>
     </ClerkProvider>
   );
